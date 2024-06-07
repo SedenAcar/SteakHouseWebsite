@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" />
+    <title>About</title>
+    <link rel="stylesheet" href="aaa.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+  <body>
+    <!--! header section start  -->
+    <header class="header">
+        <a href="homepage.html" class="logo">
+            <img src="images/diablo.png" alt="logo" />
+        </a>
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="blogs.html">Blogs</a>
+        </nav>
+
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="search here"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-1.png" alt="menu" />
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-2.png" alt="menu" />
+          <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-3.png" alt="menu" />
+          <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-4.png" alt="menu" />
+          <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+      </div>
+
+    </header>
+    <!--! header section end  -->
+
+    <!--! about section start  -->
+    <section class="about" id="about">
+      <h1 class="heading">about <span>us</span></h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/about.jpg" alt="about" />
+        </div>
+        <div class="content">
+          <h3>What Is The Secret Recipe Of Our Burgers?</h3>
+          <p>
+            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
+            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
+            Soluta Perferendis!
+          </p>
+          <p>
+            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
+            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
+            Soluta Perferendis!
+          </p>
+          <p>
+            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
+            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
+            Soluta Perferendis!
+          </p>
+          <a href="#" class="btn">learn more</a>
+        </div>
+      </div>
+    </section>
+    <!--! about section end  -->
+
+    <!--! footer section start  -->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search" />
+            <button class="btn btn-primary">search</button>
+        </div>
+        <div class="share">
+            <a href="https://www.facebook.com/sdnnnnn/" class="fab fa-facebook"></a>
+            <a href="https://twitter.com/sedennacarr" class="fab fa-x"></a>
+            <a href="https://www.instagram.com/seden.acar/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/seden-acar/" class="fab fa-linkedin"></a>
+        </div>
+
+        <a href="homepage.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="blogs.html">Blogs</a>
+        </div>
+
+        <div class="credit">
+            created by <span>Seden Acar</span> | all rigths reserved
+        </div>
+    </section>
+    <!--! footer section end  -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => { //sayfa yüklenmesi tamamen bittikten sonra çalışması için DOMContentLoaded
+          const learnMoreBtn = document.querySelector('.about .btn'); //.about sınıfının içindeki .btn sınıfına sahip butonu learnMoreBtn atar
+
+          learnMoreBtn.addEventListener('click', () => {//butona tıklanınca tetiklenir
+              learnMoreBtn.classList.add('clicked');//CSS de bulunan btn.clicked kısmını çalıştırır
+              setTimeout(() => {
+                  learnMoreBtn.classList.remove('clicked');//clicked sınıfını butondan kaldırır
+              }, 100); //belirli bir süre sonra çalıştırır(ms)
+          });
+      });
+    </script>
+  </body>
+</html>
